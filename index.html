@@ -13,12 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>fashionBlog</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container header-container">
+        <div class="container">
             <nav class="heade-navigation">
                 <a class="header-logo" href="/">FASHION</a>
                 <ul class="header-menu-list">
@@ -43,15 +43,14 @@
     </header>
     <section class="hero">
         <div class="container hero-container">
-            <div class="hero-wrap">
-                <p class="hero-wrap-text">Vehicle</p>
-                <h1 class="hero-title">
-                    One of Saturn’s largest rings my be newer than anyone
-                </h1>
-                <p class="hero-data">
-                    June 6, 2019 <span>By</span> Rickie Baroch 4 comments
-                </p>
-            </div>
+            <p class="hero-text">Vehicle</p>
+            <h1 class="hero-title">
+                One of Saturn’s largest rings may be newer than anyone
+            </h1>
+            <p class="hero-data">
+                June 6, 2019 <span>By</span> Rickie Baroch 4 comments
+            </p>
+
         </div>
     </section>
     <section class="work-area">
@@ -123,19 +122,21 @@
 
             <div class="container summer-container">
                 <img class="summer-img" src="./img/summer.png" width="770" height="349" alt="alt" />
-                <h3 class="summer-subtitle">Summer</h3>
-                <h2 class="summer-title">
-                    One of Saturn’s largest rings may be newer than anyone
-                </h2>
-                <p class="summer-data">
-                    June 6, 2019 <span>By</span> Rickie Baroch 6 comments
-                </p>
-                <p class="summer-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium doloremque
-                    laudantium, totam rem
-                </p>
+                <div class="summer-wrap">
+                    <h3 class="summer-subtitle">Summer</h3>
+                    <h2 class="summer-title">
+                        One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="summer-data">
+                        June 6, 2019 <span>By</span> Rickie Baroch 6 comments
+                    </p>
+                    <p class="summer-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem
+                    </p>
+                </div>
             </div>
             <div class="container post-kind-container">
                 <ul class="post-kind-list">
@@ -195,11 +196,11 @@
                     </p>
                     <a class="author-more" href="#">Continue Reading</a>
                 </div>
-                <h3>Featured posts</h3>
+                <h3 class="featured-title">Featured posts</h3>
                 <ul class="sidebar-list">
                     <li class="sidebar-item">
                         <img class="sidebar-img" src="./img/seidbar1.jpg" width="270" height="180" alt="alt" />
-                        <h3 class="sidebar-subtitle">Tourism</h3>
+                        <h3 class="sidebar-subtitle">jeans</h3>
                         <h2 class="sidebar-title">
                             One of Saturn’s largest rings may be newer than anyone
                         </h2>
@@ -209,7 +210,7 @@
                     </li>
                     <li class="sidebar-item">
                         <img class="sidebar-img" src="./img/seidbar2.jpg" width="270" height="180" alt="alt" />
-                        <h3 class="sidebar-subtitle">Tourism</h3>
+                        <h3 class="sidebar-subtitle">City</h3>
                         <h2 class="sidebar-title">
                             One of Saturn’s largest rings may be newer than anyone
                         </h2>
@@ -219,7 +220,7 @@
                     </li>
                     <li class="sidebar-item">
                         <img class="sidebar-img" src="./img/seidbar3.jpg" width="270" height="180" alt="alt" />
-                        <h3 class="sidebar-subtitle">Tourism</h3>
+                        <h3 class="sidebar-subtitle">Photography</h3>
                         <h2 class="sidebar-title">
                             One of Saturn’s largest rings may be newer than anyone
                         </h2>
@@ -228,14 +229,19 @@
                         </p>
                     </li>
                 </ul>
-                <div>
-                    <h3>Categories</h3>
-                    <ul>
-                        <li><a href="">Fashion</a></li>
-                        <li><a href="">Style & clothes</a></li>
-                        <li><a href="">Minimalism</a></li>
-                        <li><a href="">Black & White</a></li>
-                        <li><a href="">Modern clothes</a></li>
+                <div class="categories">
+                    <h3 class="categories-title">Categories</h3>
+                    <ul class="categories-list">
+                        <li class="categories-item"><a class="categories-link" href="">Fashion <span
+                                    class="categories-link-span">(23)</span></a></li>
+                        <li class="categories-item"><a class="categories-link" href="">Style & clothes <span
+                                    class="categories-link-span">(7)</span></a></li>
+                        <li class="categories-item"><a class="categories-link" href="">Minimalism <span
+                                    class="categories-link-span">(16)</span></a></li>
+                        <li class="categories-item"><a class="categories-link" href="">Black & White <span>
+                                    (5)</span></a></li>
+                        <li class="categories-item"><a class="categories-link" href="">Modern clothes <span
+                                    class="categories-link-span">(12)</span></a></li>
                     </ul>
                 </div>
                 <div>
@@ -337,7 +343,6 @@
     <footer class="footer">
         <div class="container footer-container">
             <a class="footer-logo" href="/">FASHION</a>
-
             <nav class="footer-navigation">
                 <ul class="footer-menu-list">
                     <li class="footer-menu-item">
@@ -360,25 +365,52 @@
             <div>
                 <ul class="footer-soc-list">
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="https://www.facebook.com/" target="_blank">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="https://x.com" target="_blank">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-Path-Copy"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-pinterest"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-Group"></use>
+                            </svg>
+                        </a>
                     </li>
+
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-Shape"></use>
+                            </svg>
+                        </a>
                     </li>
+
                     <li class="footer-soc-item">
-                        <a class="footer-soc-link" href=""></a>
+                        <a class="footer-soc-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="soc-link-icon" width="34" height="34">
+                                <use href="./img/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
+
                 </ul>
-                <p class="footer-text">@2019 Logwork. All Right Reserved.</p>
+                <p class="footer-text">@2024 Logwork. All Right Reserved.</p>
             </div>
         </div>
     </footer>
